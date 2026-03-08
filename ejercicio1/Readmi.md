@@ -1,4 +1,4 @@
-# Ejecicio 1 
+# Ejecicio 1.
 
 ## Cuenta bancaria 
 

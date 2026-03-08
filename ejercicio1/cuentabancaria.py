@@ -1,5 +1,5 @@
 
-#ta#tarea 1 cuenta bancaria 
+#ta#tarea 1 cuenta bancaria.
 class cuentabancaria:
  def  __init__(self,titular,numerodecuenta,saldo):
     self.titular = titular
