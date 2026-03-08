@@ -1,16 +1,11 @@
-#clase hija Arquero
-from Taberna import Taberna
+from Aventurero import Aventurero
 
-class Arquero(Taberna):
-    def __init__(self, nombre, nivel, arco,habilidad_especial):
+class Arquero(Aventurero):
+     def __init__(self, nombre, nivel, flechas):
         super().__init__(nombre, nivel)
-        self.arco = arco
-        self.habilidad_especial = habilidad_especial
-
-    def mostrar_informacion(self):
-        super().mostrar_informacion()
-        print(f"arco: {self.arco}")
-        print(f"habilidad especial: {self.habilidad_especial}")
-
-    def usar_habilidad_especial(self):
-        print(f"{self.nombre} utiliza su habilidad especial: {self.habilidad_especial}")
+        self.flechas = flechas
+    
+     def usar_habilidad(self):
+        super().usar_habilidad()
+        self.flechas -= 1
+        print(f"{self.nombre} dispara una flecha con su arco, le quedan {self.flechas} flechas!")
