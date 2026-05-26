@@ -3,7 +3,7 @@ from Jugador import Jugador
 #Clase derivada
 class Competidor(Jugador):
     
-    print("\n======================== COMPETIDOR ==================================")
+    print("\n======================== COMPETIDOR ===============================")
     
     def __init__(self, nombre, num_control, nivel, puntos,equipo):
         super().__init__(nombre, num_control, nivel, puntos)
